@@ -1,12 +1,12 @@
-# Take Home Test ALAMI | Landing page with Reactjs
+# Take Home Test ALAMI <br>Create one-page website with Reactjs
 
 This project was created by Ekky Patria Kencana with [Create React App](https://github.com/facebook/create-react-app) using [Tailwindcss](https://tailwindcss.com/) as CSS framework.
 
 ## Other Resource
 
-- [Images](https://unsplash.com/)
-- [Icons](https://www.svgrepo.com/)
-- [Additional Fonts](https://fonts.google.com/specimen/Dancing+Script)
+- Hero Images: [Unsplash](https://unsplash.com/)
+- Icons: [SVGRepo](https://www.svgrepo.com/)
+- Additional Fonts: [Google Fonts Dancing Scripts](https://fonts.google.com/specimen/Dancing+Script)
 
 ## Getting Started
 
