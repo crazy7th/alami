@@ -1,5 +1,7 @@
 import {
-    PortofolioFeature
+    dataPortofolio,
+    PortofolioFeature,
+    PortofolioService
 } from '../../constants/data';
 
 export const Portofolio = () => {
@@ -10,14 +12,13 @@ export const Portofolio = () => {
         >
             <div className="container mx-auto text-center p-4 md:pt-20">
                 <p>
-                    Catering service in New York
+                    {dataPortofolio.tagline}
                 </p>
                 <h2 className="text-4xl font-bold md:w-2/3 mx-auto my-5">
-                    We specialize in corporate and private servers
+                    {dataPortofolio.headline}
                 </h2>
                 <p className="md:w-4/5 mx-auto mb-3">
-                    With 20 years of experience, we promise you the freshest, local ingredients,
-                    hand crafted cooking sprinkled with our unique whimsical elegance and exceptional service.
+                    {dataPortofolio.description}
                 </p>
             </div>
             <div className="md:flex flex-1 h-full">
@@ -29,7 +30,7 @@ export const Portofolio = () => {
                 <div className="flex-1 md:flex items-center bg-[#302729] text-white p-4 overflow-y-scroll">
                     <div className="md:mx-8">
                         <div className="grid md:grid-cols-2 gap-4">
-                            {PortofolioFeature.map((data, i) => {
+                            {PortofolioFeature.map((data) => {
                                 return (
                                     <div className="md:w-56 bg-[#362A2E] rounded-lg p-4">
                                         <div className="w-12 h-12 bg-[#A8858F] rounded-md mb-5" />
@@ -50,9 +51,13 @@ export const Portofolio = () => {
                                 Service
                             </h4>
                             <div className="mt-6 space-y-6">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus mattis justo, scelerisque eleifend ipsum pulvinar auctor.</p>
-                                <p>Donec tincidunt tempus diam at fringilla. Nulla facilisi. Vestibulum non sollicitudin turpis, in semper ante.</p>
-                                <p>Nunc accumsan nisi arcu, sed sodales velit fermentum eu. Aliquam interdum sollicitudin sapien sed ultricies. Cras sit amet volutpat mi. Duis egestas libero ac ex semper, a porttitor augue lacinia.</p>
+                                {PortofolioService.map((data) => {
+                                    return (
+                                        <p>
+                                            {data}
+                                        </p>
+                                    );
+                                })}
                             </div>
                             <div className="mt-10 md:flex space-y-4 md:space-x-4 md:space-y-0">
                                 <a
