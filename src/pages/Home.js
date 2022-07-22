@@ -4,18 +4,11 @@ import { FloatingMenu, HeaderNav } from '../components/common';
 import { useEffect, useState } from 'react';
 
 function Home() {
-  const [isShow, setIsShow] = useState(0);
-  const toggleMenu = () => {
-    if (isShow == 0) {
-      setIsShow(1)
-    }
-    else {
-      setIsShow(0)
-    }
-    console.log('menu click', isShow);
+  const [isShow, setIsShow] = useState(false);
+  const toggleMenu = (isShow) => {
+    setIsShow(!isShow);
   };
   useEffect(() => {
-
   }, [isShow]);
 
   return (
@@ -29,14 +22,14 @@ function Home() {
                 <p className="font-medium">ke<span className="text-[#FF4328]">tring</span></p>
               </a>
             </div>
-            <HeaderNav showMenu={isShow} />
+            <HeaderNav showMenu={isShow ? '1' : '0'} />
           </div>
           <div className="flex-row-reverse md:flex-row flex items-center space-x-reverse space-x-4 md:space-x-6">
             <div className="md:hidden flex items-center">
               <button
                 onClick={(event) => {
                   event.preventDefault();
-                  toggleMenu();
+                  toggleMenu(isShow);
                 }}
               >
                 <img src="./img/ic_burger.svg" className="w-5" alt="check menu" />
@@ -60,7 +53,7 @@ function Home() {
         </div>
       </header>
 
-      <FloatingMenu showMenu={isShow} />
+      <FloatingMenu showMenu={isShow ? '1' : '0'} />
 
       <HeroImage />
       <Portofolio />
