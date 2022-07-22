@@ -32,7 +32,7 @@ export const Portofolio = () => {
                         <div className="grid md:grid-cols-2 gap-4">
                             {PortofolioFeature.map((data) => {
                                 return (
-                                    <div className="md:w-56 bg-[#362A2E] rounded-lg p-4">
+                                    <div key={data.id} className="md:w-56 bg-[#362A2E] rounded-lg p-4">
                                         <div className="w-12 h-12 bg-[#A8858F] rounded-md mb-5" />
                                         <h4 className="text-xl font-bold text-[#F57D85] mb-2">
                                             {data.title}
@@ -51,9 +51,9 @@ export const Portofolio = () => {
                                 Service
                             </h4>
                             <div className="mt-6 space-y-6">
-                                {PortofolioService.map((data) => {
+                                {PortofolioService.map((data, i) => {
                                     return (
-                                        <p>
+                                        <p key={i}>
                                             {data}
                                         </p>
                                     );
