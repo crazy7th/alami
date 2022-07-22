@@ -22,7 +22,7 @@ function Home() {
                 <p className="font-medium">ke<span className="text-[#FF4328]">tring</span></p>
               </a>
             </div>
-            <HeaderNav showMenu={isShow ? '1' : '0'} />
+            <HeaderNav showMenu={isShow ? '1' : '0'} hideMenu={toggleMenu} />
           </div>
           <div className="flex-row-reverse md:flex-row flex items-center space-x-reverse space-x-4 md:space-x-6">
             <div className="md:hidden flex items-center">
@@ -53,7 +53,7 @@ function Home() {
         </div>
       </header>
 
-      <FloatingMenu showMenu={isShow ? '1' : '0'} />
+      <FloatingMenu showMenu={isShow ? '1' : '0'} hideMenu={toggleMenu} />
 
       <HeroImage />
       <Portofolio />
