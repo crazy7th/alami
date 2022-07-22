@@ -5,7 +5,7 @@ export function HeaderNav(props) {
         <div className="relative">
           <button className="peer py-2 hover:text-[#F57D85] flex items-center">
             Demos ▾
-                    </button>
+          </button>
 
           <div className={props.showMenu == 1 ? 'top-0 left-[100px] absolute rounded-lg hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg' : 'absolute rounded-lg hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg'}>
             <a className="px-5 py-3 hover:bg-gray-200" href="#">Demos 1</a>
@@ -19,7 +19,7 @@ export function HeaderNav(props) {
         <div className="relative">
           <button className="peer py-2 hover:text-[#F57D85] flex items-center">
             Pages ▾
-                    </button>
+          </button>
 
           <div className={props.showMenu == 1 ? 'top-0 left-[100px] absolute rounded-lg hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg' : 'absolute rounded-lg hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg'}>
             <a className="px-5 py-3 hover:bg-gray-200" href="#">About Us</a>
@@ -32,7 +32,7 @@ export function HeaderNav(props) {
         <div className="relative">
           <button className="peer py-2 hover:text-[#F57D85] flex items-center">
             Portofolio ▾
-                    </button>
+          </button>
 
           <div className={props.showMenu == 1 ? 'top-0 left-[100px] absolute rounded-lg hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg' : 'absolute rounded-lg hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg'}>
             <a className="px-5 py-3 hover:bg-gray-200" href="#portofolio">Portofolio 1</a>
