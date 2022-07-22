@@ -14,25 +14,25 @@ export const dataPortofolio = {
 export const PortofolioFeature = [
     {
         id: 'P-001',
-        icon: 'x',
+        icon: './img/features_design.svg',
         title: 'Design',
         description: 'Fullstack all around designer that may or may not include a guide for specific creative people'
     },
     {
         id: 'P-002',
-        icon: 'x',
+        icon: './img/features_develop.svg',
         title: 'Develop',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus mattis justo, scelerisque eleifend ipsum pulvinar auctor'
     },
     {
         id: 'P-003',
-        icon: 'x',
+        icon: './img/features_write.svg',
         title: 'Write',
         description: 'Donec tincidunt tempus diam at fringilla. Nulla facilisi. Vestibulum non sollicitudin turpis'
     },
     {
         id: 'P-004',
-        icon: 'x',
+        icon: './img/features_promote.svg',
         title: 'Promote',
         description: 'Nunc accumsan nisi arcu, sed sodales velit fermentum eu. Aliquam interdum sollicitudin sapien sed ultricies'
     }

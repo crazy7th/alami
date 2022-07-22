@@ -33,7 +33,7 @@ export const Portofolio = () => {
                             {PortofolioFeature.map((data) => {
                                 return (
                                     <div key={data.id} className="md:w-56 bg-[#362A2E] rounded-lg p-4">
-                                        <div className="w-12 h-12 bg-[#A8858F] rounded-md mb-5" />
+                                        <img src={data.icon} className="h-10 mb-5" alt={'Features ' + data.title} />
                                         <h4 className="text-xl font-bold text-[#F57D85] mb-2">
                                             {data.title}
                                         </h4>
