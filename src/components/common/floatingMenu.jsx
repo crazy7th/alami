@@ -1,7 +1,7 @@
 export function FloatingMenu(props) {
     return (
         <div 
-            className={props.showMenu==1? 'fixed top-[228px] z-20 bg-gray-100 w-full border-t border-gray-100' : 'hidden md:flex fixed z-20 bg-white rounded-md shadow right-0 top-1/2 -translate-y-1/2'}
+            className={props.showMenu==1? 'fixed top-[227px] z-20 bg-gray-100 w-full border-t border-gray-100' : 'hidden md:flex fixed z-20 bg-white rounded-md shadow right-0 top-1/2 -translate-y-1/2'}
         >
             <ul className={props.showMenu==1? 'flex' : ''}>
                 <li className="flex-1 md:border-b md:border-gray-100">
