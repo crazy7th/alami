@@ -4,14 +4,14 @@ export const HeroImage = () => {
     return (
         <div
             id="heroImage"
-            className="kt-hero-img text-white relative h-screen flex flex-col md:overflow-hidden"
+            className="kt-hero-img bg-center md:bg-top text-white relative md:h-screen flex flex-col md:overflow-hidden"
         >
-            <div className="absolute h-full w-full bg-black/60">
-                <div className="container mx-auto text-center p-4 md:pt-20">
+            <div className="h-full w-full bg-black/60">
+                <div className="container mx-auto text-center p-4 pt-20 mb-24">
                     <p>
                         Catering should be an experience
                     </p>
-                    <h1 className="text-6xl font-bold md:w-2/3 mx-auto my-5">
+                    <h1 className="text-4xl md:text-6xl font-bold md:w-2/3 mx-auto my-5">
                         We use only the finest and freshnest ingredients
                     </h1>
                     <p className="md:w-2/5 mx-auto my-10">

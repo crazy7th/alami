@@ -2,7 +2,7 @@ export const Portofolio = () => {
     return (
         <div
             id="portofolio"
-            className="relative h-screen flex flex-col md:overflow-hidden"
+            className="relative md:h-screen flex flex-col md:overflow-hidden"
         >
             <div className="container mx-auto text-center p-4 md:pt-20">
                 <p>
