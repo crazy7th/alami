@@ -7,7 +7,7 @@ export const HeroImage = () => {
     return (
         <div
             id="heroImage"
-            className={`bg-[url('../public/img/8LxEvb4kU-unsplash.jpg')] bg-cover bg-center md:bg-top text-white relative md:h-screen flex flex-col md:overflow-hidden`}
+            className={`bg-[url('../public/img/8LxEvb4kU-unsplash.jpg')] bg-cover bg-center md:bg-top text-white relative lg:h-screen flex flex-col`}
         >
             <div className="h-full w-full bg-black/60">
                 <div className="container mx-auto text-center p-4 pt-20 mb-24">
