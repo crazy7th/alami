@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { HeroImage } from './components/home';
+import { HeroImage, Portofolio } from './components/home';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         </div>
       </header>
 
-      <div className="fixed z-20 bg-white rounded-md right-0 top-1/2 -translate-y-1/2">
+      <div className="fixed z-20 bg-white rounded-md shadow right-0 top-1/2 -translate-y-1/2">
         <ul>
           <li className="border-b border-gray-100">
             <a href="#" className="px-4 py-2 flex hover:text-green-500">
@@ -60,7 +60,7 @@ function App() {
       </div>
 
       <HeroImage />
-      <HeroImage />
+      <Portofolio />
     </div>
   );
 }
