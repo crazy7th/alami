@@ -1,3 +1,7 @@
+import {
+    PortofolioFeature
+} from '../../constants/data';
+
 export const Portofolio = () => {
     return (
         <div
@@ -25,45 +29,19 @@ export const Portofolio = () => {
                 <div className="flex-1 md:flex items-center bg-[#302729] text-white p-4 overflow-y-scroll">
                     <div className="md:mx-8">
                         <div className="grid md:grid-cols-2 gap-4">
-                            <div className="md:w-56 bg-[#362A2E] rounded-lg p-4">
-                                <div className="w-12 h-12 bg-[#A8858F] rounded-md mb-5" />
-                                <h4 className="text-xl font-bold text-[#F57D85] mb-2">
-                                    Design
-                                </h4>
-                                <p className="text-xs">
-                                    Fullstack all around designer that may or may not include a guide
-                                    for specific creative people
-                                </p>
-                            </div>
-                            <div className="md:w-56 bg-[#362A2E] rounded-lg p-4">
-                                <div className="w-12 h-12 bg-[#A8858F] rounded-md mb-5" />
-                                <h4 className="text-xl font-bold text-[#F57D85] mb-2">
-                                    Develop
-                                </h4>
-                                <p className="text-xs">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nulla luctus mattis justo, scelerisque eleifend ipsum pulvinar auctor.
-                                </p>
-                            </div>
-                            <div className="md:w-56 bg-[#362A2E] rounded-lg p-4">
-                                <div className="w-12 h-12 bg-[#A8858F] rounded-md mb-5" />
-                                <h4 className="text-xl font-bold text-[#F57D85] mb-2">
-                                    Write
-                                </h4>
-                                <p className="text-xs">
-                                    Donec tincidunt tempus diam at fringilla. Nulla facilisi.
-                                    Vestibulum non sollicitudin turpis
-                                </p>
-                            </div>
-                            <div className="md:w-56 bg-[#362A2E] rounded-lg p-4">
-                                <div className="w-12 h-12 bg-[#A8858F] rounded-md mb-5" />
-                                <h4 className="text-xl font-bold text-[#F57D85] mb-2">
-                                    Promote
-                                </h4>
-                                <p className="text-xs">
-                                    Nunc accumsan nisi arcu, sed sodales velit fermentum eu. Aliquam interdum sollicitudin sapien sed ultricies
-                                </p>
-                            </div>
+                            {PortofolioFeature.map((data, i) => {
+                                return (
+                                    <div className="md:w-56 bg-[#362A2E] rounded-lg p-4">
+                                        <div className="w-12 h-12 bg-[#A8858F] rounded-md mb-5" />
+                                        <h4 className="text-xl font-bold text-[#F57D85] mb-2">
+                                            {data.title}
+                                        </h4>
+                                        <p className="text-xs">
+                                            {data.description}
+                                        </p>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
                     <div className="flex-1 p-4 md:p-8 mt-10 md:mt-0">

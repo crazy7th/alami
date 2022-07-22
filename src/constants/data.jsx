@@ -10,24 +10,24 @@ export const PortofolioFeature = [
         id: 1,
         icon: 'x',
         title: 'Design',
-        description: 'z'
+        description: 'Fullstack all around designer that may or may not include a guide for specific creative people'
     },
     {
         id: 2,
         icon: 'x',
         title: 'Develop',
-        description: 'z'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus mattis justo, scelerisque eleifend ipsum pulvinar auctor'
     },
     {
         id: 3,
         icon: 'x',
         title: 'Write',
-        description: 'z'
+        description: 'Donec tincidunt tempus diam at fringilla. Nulla facilisi. Vestibulum non sollicitudin turpis'
     },
     {
         id: 4,
         icon: 'x',
         title: 'Promote',
-        description: 'z'
+        description: 'Nunc accumsan nisi arcu, sed sodales velit fermentum eu. Aliquam interdum sollicitudin sapien sed ultricies'
     }
 ];
