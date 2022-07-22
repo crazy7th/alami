@@ -1,69 +1,61 @@
 import './App.css';
 import { HeroImage, Portofolio } from './components/home';
-import { FloatingMenu } from './components/common';
+import { FloatingMenu, HeaderNav } from './components/common';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [isShow, setIsShow] = useState(0);
+  const toggleMenu = () => {
+    if (isShow == 0) {
+      setIsShow(1)
+    }
+    else {
+      setIsShow(0)
+    }
+    console.log('menu click', isShow);
+  };
+  useEffect(() => {
+
+  }, [isShow]);
+
   return (
     <div className="App">
       <header className="fixed left-0 right-0 shadow w-full z-10 bg-white">
         <div className="container mx-auto px-4 py-3 flex justify-end">
-          <div className="flex-1 flex items-center">
+          <div className="flex-1 md:flex items-center">
             <div className="mr-16">
               <a href="/" className="flex items-center">
-                <img src="/img/catering.svg" alt="logo ketring" className="h-8"/>
+                <img src="/img/catering.svg" alt="logo ketring" className="h-8" />
                 <p className="font-medium">ke<span className="text-[#FF4328]">tring</span></p>
               </a>
             </div>
-            <ul className="flex items-center space-x-6">
-              <li>
-                <div className="relative">
-                    <button className="peer py-2 hover:text-[#F57D85] flex items-center">
-                      Demos ▾
-                    </button>
-                    
-                    <div className="absolute hidden peer-hover:flex hover:flex
-                    w-[200px] flex-col bg-white drop-shadow-lg">
-                        <a className="px-5 py-3 hover:bg-gray-200" href="#">Demos 1</a>
-                        <a className="px-5 py-3 hover:bg-gray-200" href="#">Demos 2</a>
-                        <a className="px-5 py-3 hover:bg-gray-200" href="#">Demos 3</a>
-                        <a className="px-5 py-3 hover:bg-gray-200" href="#">Demos 4</a>
-                    </div>
-                </div>
-              </li>
-              <li>
-                <div className="relative">
-                    <button className="peer py-2 hover:text-[#F57D85] flex items-center">
-                      Pages ▾
-                    </button>
-                    
-                    <div className="absolute hidden peer-hover:flex hover:flex
-                    w-[200px] flex-col bg-white drop-shadow-lg">
-                        <a className="px-5 py-3 hover:bg-gray-200" href="#">About Us</a>
-                        <a className="px-5 py-3 hover:bg-gray-200" href="#">Contact Us</a>
-                        <a className="px-5 py-3 hover:bg-gray-200" href="#">Privacy Policy</a>
-                    </div>
-                </div>
-              </li>
-              <li>
-                <div className="relative">
-                    <button className="peer py-2 hover:text-[#F57D85] flex items-center">
-                      Portofolio ▾
-                    </button>
-                    
-                    <div className="absolute hidden peer-hover:flex hover:flex
-                    w-[200px] flex-col bg-white drop-shadow-lg">
-                        <a className="px-5 py-3 hover:bg-gray-200" href="#portofolio">Portofolio 1</a>
-                        <a className="px-5 py-3 hover:bg-gray-200" href="#portofolio">Portofolio 2</a>
-                        <a className="px-5 py-3 hover:bg-gray-200" href="#portofolio">Portofolio 3</a>
-                        <a className="px-5 py-3 hover:bg-gray-200" href="#portofolio">Portofolio 4</a>
-                    </div>
-                </div>
-              </li>
-            </ul>
+            <HeaderNav showMenu={isShow} />
           </div>
-          <div className="flex items-center space-x-6">
-            <div>cart</div>
-            <div>search</div>
+          <div className="flex-row-reverse md:flex-row flex items-center space-x-reverse space-x-4 md:space-x-6">
+            <div className="md:hidden md:hidden items-center">
+              <button
+                onClick={(event) => {
+                  event.preventDefault();
+                  toggleMenu();
+                }}
+              >
+                <img src="./img/ic_burger.svg" className="w-5" alt="check menu" />
+              </button>
+            </div>
+            <div className="flex items-center">
+              <button>
+                <img src="./img/ic_cart.svg" className="w-5" alt="go to cart" />
+              </button>
+            </div>
+            <div className="flex items-center">
+              <button className="md:hidden">
+                <img src="./img/ic_search.svg" className="w-5" alt="search your needs" />
+              </button>
+              <div className="hidden md:flex relative border border-black rounded-lg">
+                <input type="text" placeholder="search your need" className="rounded-lg px-5 py-1" />
+                <img src="./img/ic_search.svg" className="w-4 absolute top-0 bottom-0 right-0 my-auto mr-2" alt="icon search" />
+              </div>
+            </div>
           </div>
         </div>
       </header>

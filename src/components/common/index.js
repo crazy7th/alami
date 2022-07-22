@@ -1,3 +1,4 @@
 import { FloatingMenu } from './floatingMenu';
+import { HeaderNav } from './headerNav';
 
-export { FloatingMenu };
+export { FloatingMenu, HeaderNav };
