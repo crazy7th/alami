@@ -11,13 +11,13 @@ export const HeroImage = () => {
         >
             <div className="h-full w-full bg-black/60">
                 <div className="container mx-auto text-center p-4 pt-20 mb-24">
-                    <p>
+                    <p className="dancing-text text-2xl md:text-3xl">
                         {Hero.tagline}
                     </p>
-                    <h1 className="text-4xl md:text-6xl font-bold md:w-2/3 mx-auto my-5">
+                    <h1 className="text-4xl md:text-6xl font-bold lg:w-2/3 mx-auto my-5">
                         {Hero.headline}
                     </h1>
-                    <p className="md:w-2/5 mx-auto my-10">
+                    <p className="md:w-3/5 lg:w-2/5 mx-auto my-10">
                         {Hero.description}
                     </p>
                     <div>

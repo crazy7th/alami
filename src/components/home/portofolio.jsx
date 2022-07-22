@@ -11,7 +11,7 @@ export const Portofolio = () => {
             className="relative md:h-screen flex flex-col"
         >
             <div className="container mx-auto text-center p-4 md:pt-20">
-                <p>
+                <p className="dancing-text text-2xl md:text-3xl">
                     {dataPortofolio.tagline}
                 </p>
                 <h2 className="text-4xl font-bold md:w-2/3 mx-auto my-5">
