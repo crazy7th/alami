@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { HeroImage, Portofolio } from './components/home';
 
@@ -9,8 +8,9 @@ function App() {
         <div className="container mx-auto px-4 py-3 flex justify-end">
           <div className="flex-1 flex items-center">
             <div className="mr-16">
-              <a href="/" className="hover:text-[#F57D85]">
-                <div className="bg-[#404040] w-32 h-8 drop-shadow"/>
+              <a href="/" className="flex items-center">
+                <img src="/img/catering.svg" alt="image" className="h-8"/>
+                <p className="font-medium">ke<span className="text-[#FF4328]">tring</span></p>
               </a>
             </div>
             <ul className="flex items-center space-x-6">
