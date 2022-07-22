@@ -1,5 +1,6 @@
 import './App.css';
 import { HeroImage, Portofolio } from './components/home';
+import { FloatingMenu } from './components/common';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
           <div className="flex-1 flex items-center">
             <div className="mr-16">
               <a href="/" className="flex items-center">
-                <img src="/img/catering.svg" alt="image" className="h-8"/>
+                <img src="/img/catering.svg" alt="logo ketring" className="h-8"/>
                 <p className="font-medium">ke<span className="text-[#FF4328]">tring</span></p>
               </a>
             </div>
@@ -67,40 +68,7 @@ function App() {
         </div>
       </header>
 
-      <div className="fixed z-20 bg-white rounded-md shadow right-0 top-1/2 -translate-y-1/2">
-        <ul>
-          <li className="border-b border-gray-100">
-            <a href="#" className="px-4 py-2 flex hover:text-green-500">
-              1
-            </a>
-          </li>
-          <li className="border-b border-gray-100">
-            <a href="#" className="px-4 py-2 flex hover:text-green-500">
-              2
-            </a>
-          </li>
-          <li className="border-b border-gray-100">
-            <a href="#" className="px-4 py-2 flex hover:text-green-500">
-              3
-            </a>
-          </li>
-          <li className="border-b border-gray-100">
-            <a href="#" className="px-4 py-2 flex hover:text-green-500">
-              4
-            </a>
-          </li>
-          <li className="border-b border-gray-100">
-            <a href="#" className="px-4 py-2 flex hover:text-green-500">
-              5
-            </a>
-          </li>
-          <li>
-            <a href="#" className="px-4 py-2 flex hover:text-green-500">
-              6
-            </a>
-          </li>
-        </ul>
-      </div>
+      <FloatingMenu />
 
       <HeroImage />
       <Portofolio />
