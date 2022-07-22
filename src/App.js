@@ -6,19 +6,19 @@ function App() {
   return (
     <div className="App">
       <header className="fixed left-0 right-0 shadow w-full z-10 bg-white">
-        <div className="container mx-auto py-3">
+        <div className="container mx-auto px-4 py-3">
           <ul className="flex space-x-3">
             <li>
-              <a href="/">Home</a>
+              <a href="/" className="hover:text-[#F57D85]">Home</a>
             </li>
             <li>
-              <a href="#">Demo</a>
+              <a href="#" className="hover:text-[#F57D85]">Demo</a>
             </li>
             <li>
-              <a href="#">Pages</a>
+              <a href="#" className="hover:text-[#F57D85]">Pages</a>
             </li>
             <li>
-              <a href="#">Portofolio</a>
+              <a href="#" className="hover:text-[#F57D85]">Portofolio</a>
             </li>
           </ul>
         </div>

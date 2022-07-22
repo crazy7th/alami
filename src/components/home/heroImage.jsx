@@ -2,9 +2,12 @@ import { SuperGraph } from './superGraph';
 
 export const HeroImage = () => {
     return (
-        <div className="relative text-white min-h-screen kt-hero-img">
+        <div
+            id="heroImage"
+            className="kt-hero-img text-white relative h-screen flex flex-col md:overflow-hidden"
+        >
             <div className="absolute h-full w-full bg-black/60">
-                <div className="container mx-auto text-center p-4 md:pt-24">
+                <div className="container mx-auto text-center p-4 md:pt-20">
                     <p>
                         Catering should be an experience
                     </p>
