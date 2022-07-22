@@ -1,9 +1,9 @@
-import './App.css';
-import { HeroImage, Portofolio } from './components/home';
-import { FloatingMenu, HeaderNav } from './components/common';
+import '../styles/Home.css';
+import { HeroImage, Portofolio } from '../components/home';
+import { FloatingMenu, HeaderNav } from '../components/common';
 import { useEffect, useState } from 'react';
 
-function App() {
+function Home() {
   const [isShow, setIsShow] = useState(0);
   const toggleMenu = () => {
     if (isShow == 0) {
@@ -68,4 +68,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

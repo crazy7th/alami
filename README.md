@@ -1,6 +1,46 @@
-# Getting Started with Create React App
+# Take Home Test ALAMI | Landing page with Reactjs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created by Ekky Patria Kencana with [Create React App](https://github.com/facebook/create-react-app) using [Tailwindcss](https://tailwindcss.com/) as CSS framework.
+
+## Other Resource
+
+- [Images](https://unsplash.com/)
+- [Icons](https://www.svgrepo.com/)
+- [Additional Fonts](https://fonts.google.com/specimen/Dancing+Script)
+
+## Getting Started
+
+### Prerequisites
+
+- Install node
+  https://nodejs.org/en/download/
+
+### Installation
+
+1. Clone the repo (if come from Repo)
+   ```sh
+   git clone https://github.com/crazy7th/alami.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm start
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Testing
+
+##### Unit test
+
+```
+npm test
+```
+
+## Documentations
+- [Project Structure](docs/folder-structure.md)
 
 ## Available Scripts
 
