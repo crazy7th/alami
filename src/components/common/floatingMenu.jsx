@@ -1,15 +1,17 @@
-export const FloatingMenu = () => {
+export function FloatingMenu(props) {
     return (
-        <div className="hidden md:flex fixed z-20 bg-white rounded-md shadow right-0 top-1/2 -translate-y-1/2">
-            <ul>
-                <li className="border-b border-gray-100">
+        <div 
+            className={props.showMenu==1? 'fixed top-[228px] z-20 bg-gray-100 w-full border-t border-gray-100' : 'hidden md:flex fixed z-20 bg-white rounded-md shadow right-0 top-1/2 -translate-y-1/2'}
+        >
+            <ul className={props.showMenu==1? 'flex' : ''}>
+                <li className="flex-1 md:border-b md:border-gray-100">
                     <a href="#" className="p-4 flex hover:text-green-500">
                         <svg className="stroke-black hover:stroke-green-500" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 20.2895V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V15C21 16.1046 20.1046 17 19 17H7.96125C7.35368 17 6.77906 17.2762 6.39951 17.7506L4.06852 20.6643C3.71421 21.1072 3 20.8567 3 20.2895Z" stroke="currentColor" strokeWidth="1.5"/>
                         </svg>
                     </a>
                 </li>
-                <li className="border-b border-gray-100">
+                <li className="flex-1 md:border-b md:border-gray-100">
                     <a href="#" className="p-4 flex hover:text-green-500">
                         <svg className="fill-black hover:fill-green-500" width="24px" height="24px" viewBox="0 0 79.694 79.694" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M68.013,11.67C60.488,4.144,50.482,0,39.838,0s-20.65,4.145-28.176,11.671c-15.537,15.536-15.537,40.815,0,56.351
@@ -25,7 +27,7 @@ export const FloatingMenu = () => {
                         </svg>
                     </a>
                 </li>
-                <li className="border-b border-gray-100">
+                <li className="flex-1 md:border-b md:border-gray-100">
                     <a href="#" className="p-4 flex hover:text-green-500">
                         <svg className="fill-black hover:fill-green-500" width="24px" height="24px" viewBox="0 0 503.641 503.641" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M460.494,106.408c-0.426-2.505-1.788-4.448-3.809-5.571L358.836,2.988c-1.124-2.021-3.067-3.383-5.571-3.809
@@ -52,7 +54,7 @@ export const FloatingMenu = () => {
                         </svg>
                     </a>
                 </li>
-                <li className="border-b border-gray-100">
+                <li className="flex-1 md:border-b md:border-gray-100">
                     <a href="#" className="p-4 flex hover:text-green-500">
                         <svg className="fill-black hover:fill-green-500" width="24px" height="24px" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.25 5.5C3.45507 5.5 2 6.95508 2 8.75V19.25C2 21.0449 3.45507 22.5 5.25 22.5H15.7523C17.5472 22.5 19.0023 21.0449 19.0023 
@@ -62,7 +64,7 @@ export const FloatingMenu = () => {
                         </svg>
                     </a>
                 </li>
-                <li className="border-b border-gray-100">
+                <li className="flex-1 md:border-b md:border-gray-100">
                     <a href="#" className="p-4 flex hover:text-green-500">
                         <svg className="fill-black hover:fill-green-500" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM4 8a6 6 0 1 1 12 0A6 6 0 0 1 4 8zm12.828-4.243a1 1 0 0 1 1.415 0 6 6 0 0 1 0 8.486 
@@ -72,7 +74,7 @@ export const FloatingMenu = () => {
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li className="flex-1">
                     <a href="#" className="p-4 flex hover:text-green-500">
                         <svg className="fill-black hover:fill-green-500" width="24px" height="24px" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.68,13l-0.833-5h-2.99C7.411,6.28,5.859,5,4,5C1.794,5,0,6.794,0,9s1.794,4,4,4c1.859,0,3.411-1.28,3.858-3h1.294l0.5,3

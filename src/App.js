@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="fixed left-0 right-0 shadow w-full z-10 bg-white">
+      <header className="fixed left-0 right-0 shadow w-full z-30 bg-white">
         <div className="container mx-auto px-4 py-3 flex justify-end">
           <div className="flex-1 md:flex items-center">
             <div className="mr-16">
@@ -32,7 +32,7 @@ function App() {
             <HeaderNav showMenu={isShow} />
           </div>
           <div className="flex-row-reverse md:flex-row flex items-center space-x-reverse space-x-4 md:space-x-6">
-            <div className="md:hidden md:hidden items-center">
+            <div className="md:hidden flex items-center">
               <button
                 onClick={(event) => {
                   event.preventDefault();
@@ -60,7 +60,7 @@ function App() {
         </div>
       </header>
 
-      <FloatingMenu />
+      <FloatingMenu showMenu={isShow} />
 
       <HeroImage />
       <Portofolio />
