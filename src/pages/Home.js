@@ -8,8 +8,6 @@ function Home() {
   const toggleMenu = (isShow) => {
     setIsShow(!isShow);
   };
-  useEffect(() => {
-  }, [isShow]);
 
   return (
     <div className="App">
@@ -22,7 +20,7 @@ function Home() {
                 <p className="font-medium">ke<span className="text-[#FF4328]">tring</span></p>
               </a>
             </div>
-            <HeaderNav showMenu={isShow ? '1' : '0'} hideMenu={toggleMenu} />
+            <HeaderNav showMenu={isShow} hideMenu={toggleMenu} />
           </div>
           <div className="flex-row-reverse md:flex-row flex items-center space-x-reverse space-x-4 md:space-x-6">
             <div className="md:hidden flex items-center">
