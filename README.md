@@ -1,9 +1,9 @@
-# Take Home Test ALAMI <br>Create one-page website with Reactjs
+# Create React App x Tailwinds
 
 This project was created by Ekky Patria Kencana with [Create React App](https://github.com/facebook/create-react-app) using [Tailwindcss](https://tailwindcss.com/) as CSS framework.
 
 ## Other Resource
-
+- How to Start: [Tailwind x React](https://tailwindcss.com/docs/guides/create-react-app)
 - Hero Images: [Unsplash](https://unsplash.com/)
 - Icons: [SVGRepo](https://www.svgrepo.com/)
 - Additional Fonts: [Google Fonts Dancing Scripts](https://fonts.google.com/specimen/Dancing+Script)
