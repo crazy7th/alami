@@ -19,7 +19,7 @@ This project was created by Ekky Patria Kencana with [Create React App](https://
 
 1. Clone the repo (if come from Repo)
    ```sh
-   git clone https://github.com/crazy7th/alami.git
+   git clone https://github.com/crazy7th/react-tailwind
    ```
 2. Install NPM packages
    ```sh
